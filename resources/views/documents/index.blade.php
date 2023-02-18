@@ -27,6 +27,11 @@
                                         class="btn btn-action-preview btn-sm"><i class="fas fa-eye"></i>&nbsp;Visualizar
                                     </a>&nbsp;
 
+                                    <a href="{{ asset('documents/' . $row->document) }}" class="btn btn-action-download btn-sm"
+                                        download>
+                                        <i class="fas fa-download"></i>&nbsp;Descargar
+                                    </a>&nbsp;
+
                                     <a href=" {{ route('edit.document', $row->id) }} " class="btn btn-action-edit btn-sm"><i
                                             class="fas fa-pen"></i>&nbsp;Editar
                                     </a>&nbsp;
